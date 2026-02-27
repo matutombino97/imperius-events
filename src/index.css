@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-champagne: #F7E7CE;
+  --color-champagne-light: #FBF2E3;
+  --color-champagne-dark: #E8D5B5;
+  --color-gold: #C5A35A;
+  --color-gold-light: #D4B96E;
+  --color-gold-dark: #A88A42;
+  --color-dark: #1A1A1A;
+  --color-dark-lighter: #2A2A2A;
+  --color-dark-medium: #333333;
+  --color-cream: #FFFDF7;
+  --color-white-warm: #FFF9F0;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-dark);
+  background-color: var(--color-cream);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-light);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-dark);
+}
+
+/* Gold gradient text utility */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold), var(--color-gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(197, 163, 90, 0.15);
+}
+
+/* Gold separator line */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+/* Masonry layout */
+.masonry-grid {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 3;
+    column-gap: 1.25rem;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-item {
+    margin-bottom: 1.25rem;
+  }
+}
