@@ -1,6 +1,6 @@
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-
+import detallesImg from "../assets/detalles.jpg";
 const galleryImages = [
     {
         id: 1,
@@ -60,7 +60,7 @@ const galleryImages = [
     },
     {
         id: 8,
-        src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
+        src: detallesImg,
         height: 'h-56 md:h-68',
         label: 'Detalles de Lujo',
         description: 'Los pequeños detalles hacen la diferencia. Desde las invitaciones artesanales hasta los souvenirs personalizados, cuidamos cada elemento.',
