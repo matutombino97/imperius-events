@@ -31,9 +31,9 @@ export default function Galas() {
                         <p className="text-dark-medium/70 leading-relaxed mb-6">
                             Trabajamos con fundaciones, ONGs y empresas para crear eventos que combinan elegancia social con propósito solidario.
                         </p>
-                        <Link to="/#quote" className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-gold-dark to-gold text-dark font-semibold tracking-wider uppercase text-sm rounded-full hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
+                        <a href="#quote" className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-gold-dark to-gold text-dark font-semibold tracking-wider uppercase text-sm rounded-full hover:shadow-lg hover:shadow-gold/25 transition-all duration-300">
                             Organizar Gala
-                        </Link>
+                        </a>
                     </motion.div>
                     <motion.div initial={{ opacity: 0, x: 30 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }} className="rounded-2xl overflow-hidden shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800&q=80" alt="Gala benéfica" className="w-full h-[400px] object-cover" />

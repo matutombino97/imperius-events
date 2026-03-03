@@ -49,9 +49,9 @@ export default function Fiestas() {
                             <div className="p-6">
                                 <h3 className="font-serif text-2xl text-dark mb-3">{party.title}</h3>
                                 <p className="text-dark-medium/60 leading-relaxed mb-4">{party.desc}</p>
-                                <Link to="/#quote" className="text-gold text-sm font-medium tracking-wider uppercase hover:text-gold-dark transition-colors">
+                                <a href="#quote" className="text-gold text-sm font-medium tracking-wider uppercase hover:text-gold-dark transition-colors">
                                     Consultar →
-                                </Link>
+                                </a>
                             </div>
                         </motion.div>
                     ))}

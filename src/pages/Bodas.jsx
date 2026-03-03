@@ -63,12 +63,12 @@ export default function Bodas() {
                         <p className="text-dark-medium/70 leading-relaxed mb-6">
                             Nuestro equipo de wedding planners certificadas cuenta con más de 15 años de experiencia organizando bodas que van desde ceremonias íntimas en jardín hasta celebraciones de 350 invitados con shows de primer nivel.
                         </p>
-                        <Link
-                            to="/#quote"
+                        <a
+                            href="#quote"
                             className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-gold-dark to-gold text-dark font-semibold tracking-wider uppercase text-sm rounded-full hover:shadow-lg hover:shadow-gold/25 transition-all duration-300"
                         >
                             Solicitar Presupuesto
-                        </Link>
+                        </a>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
@@ -141,12 +141,12 @@ export default function Bodas() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <Link
-                                        to="/#quote"
+                                    <a
+                                        href="#quote"
                                         className="block text-center px-6 py-3 border border-gold/30 text-gold font-medium tracking-wider uppercase text-sm rounded-full hover:bg-gold/10 transition-all"
                                     >
                                         Consultar
-                                    </Link>
+                                    </a>
                                 </div>
                             </motion.div>
                         ))}

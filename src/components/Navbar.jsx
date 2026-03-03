@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const base = import.meta.env.BASE_URL;
+
 const navLinks = [
-    { name: 'Inicio', href: '/#hero' },
-    { name: 'Galería', href: '/#gallery' },
-    { name: 'Disponibilidad', href: '/#availability' },
-    { name: 'Cotización', href: '/#quote' },
-    { name: 'FAQ', href: '/#faq' },
+    { name: 'Inicio', href: `${base}#hero` },
+    { name: 'Galería', href: `${base}#gallery` },
+    { name: 'Disponibilidad', href: `${base}#availability` },
+    { name: 'Cotización', href: `${base}#quote` },
+    { name: 'FAQ', href: `${base}#faq` },
 ];
 
 export default function Navbar() {
@@ -40,7 +42,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <a href="/#hero" className="flex items-center gap-3 group">
+                    <a href={`${base}#hero`} className="flex items-center gap-3 group">
                         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
                             <span className="font-serif text-dark text-lg font-bold">L</span>
                         </div>
@@ -62,7 +64,7 @@ export default function Navbar() {
                             </a>
                         ))}
                         <a
-                            href="/#quote"
+                            href={`${base}#quote`}
                             className="ml-4 px-6 py-2.5 bg-gradient-to-r from-gold-dark to-gold text-dark text-sm font-semibold tracking-wider uppercase rounded-full hover:shadow-lg hover:shadow-gold/25 transition-all duration-300"
                         >
                             Reservar
@@ -115,7 +117,7 @@ export default function Navbar() {
                             </motion.a>
                         ))}
                         <motion.a
-                            href="/#quote"
+                            href={`${base}#quote`}
                             onClick={() => setMobileOpen(false)}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}

@@ -42,12 +42,12 @@ export default function Corporativos() {
                         <p className="text-dark-medium/70 leading-relaxed mb-6">
                             Desde conferencias intimistas hasta convenciones de 500 asistentes, ofrecemos soluciones integrales que combinan tecnología de vanguardia, gastronomía gourmet y producción impecable.
                         </p>
-                        <Link
-                            to="/#quote"
+                        <a
+                            href="#quote"
                             className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-gold-dark to-gold text-dark font-semibold tracking-wider uppercase text-sm rounded-full hover:shadow-lg hover:shadow-gold/25 transition-all duration-300"
                         >
                             Solicitar Propuesta
-                        </Link>
+                        </a>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
